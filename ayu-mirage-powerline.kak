@@ -1,11 +1,11 @@
-# Powerline colorscheme for Ayu Kakoune theme
+# Powerline colorscheme for Ayu Mirage Kakoune theme
 
-hook global ModuleLoaded powerline %{ require-module powerline_ayu }
+hook global ModuleLoaded powerline %{ require-module powerline_ayu_mirage }
 
-provide-module powerline_ayu %§
-    set-option -add global powerline_themes "ayu"
+provide-module powerline_ayu_mirage %§
+    set-option -add global powerline_themes "ayu_mirage"
 
-    define-command -hidden powerline-theme-ayu %{ evaluate-commands %sh{
+    define-command -hidden powerline-theme-ayu_mirage %{ evaluate-commands %sh{
         darkgray="rgb:1f2430"
         gray="rgb:cbccc6"
         black="rgb:191e2a"
