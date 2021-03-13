@@ -6,8 +6,8 @@ provide-module powerline_ayu_mirage %§
     set-option -add global powerline_themes "ayu_mirage"
 
     define-command -hidden powerline-theme-ayu_mirage %{ evaluate-commands %sh{
-        darkgray="rgb:1f2430"
-        gray="rgb:cbccc6"
+        background="rgb:1f2430"
+        backgroundaccent="rgb:cbccc6"
         black="rgb:191e2a"
         red="rgb:ed8274"
         green="rgb:a6cc70"
@@ -28,19 +28,19 @@ provide-module powerline_ayu_mirage %§
         printf "%s\n" "
             declare-option -hidden str powerline_color00 ${white}       # fg: bufname
             declare-option -hidden str powerline_color01 ${blue}        # bg: position
-            declare-option -hidden str powerline_color02 ${darkgray}    # fg: git
-            declare-option -hidden str powerline_color03 ${darkgray}    # bg: bufname
+            declare-option -hidden str powerline_color02 ${backgroundaccent}    # fg: git
+            declare-option -hidden str powerline_color03 ${backgroundaccent}    # bg: bufname
             declare-option -hidden str powerline_color04 ${yellow}      # bg: git
-            declare-option -hidden str powerline_color05 ${darkgray}    # fg: position
-            declare-option -hidden str powerline_color06 ${darkgray}    # fg: line-column
+            declare-option -hidden str powerline_color05 ${backgroundaccent}    # fg: position
+            declare-option -hidden str powerline_color06 ${backgroundaccent}    # fg: line-column
             declare-option -hidden str powerline_color07 ${blue}        # fg: mode-info
             declare-option -hidden str powerline_color08 ${black}       # base background
             declare-option -hidden str powerline_color09 ${blue}        # bg: line-column
             declare-option -hidden str powerline_color10 ${white}       # fg: filetype
-            declare-option -hidden str powerline_color11 ${darkgray}    # bg: filetype
+            declare-option -hidden str powerline_color11 ${backgroundaccent}    # bg: filetype
             declare-option -hidden str powerline_color12 ${blue}        # bg: client
-            declare-option -hidden str powerline_color13 ${darkgray}    # fg: client
-            declare-option -hidden str powerline_color14 ${darkgray}    # bg: session
+            declare-option -hidden str powerline_color13 ${backgroundaccent}    # fg: client
+            declare-option -hidden str powerline_color14 ${backgroundaccent}    # bg: session
             declare-option -hidden str powerline_color15 ${brightwhite} # fg: session
             declare-option -hidden str powerline_color16 ${red}         # unused
             declare-option -hidden str powerline_color17 ${red}         # unused
@@ -59,8 +59,8 @@ provide-module powerline_ayu_mirage %§
             declare-option -hidden str powerline_color30 ${red}         # unused
             declare-option -hidden str powerline_color31 ${red}         # unused
 
-            declare-option -hidden str powerline_next_bg %opt{powerline_color08}
-            declare-option -hidden str powerline_base_bg %opt{powerline_color08}
+            declare-option -hidden str powerline_next_bg %opt{${background}}
+            declare-option -hidden str powerline_base_bg %opt{${background}}
     "
     }}
 
