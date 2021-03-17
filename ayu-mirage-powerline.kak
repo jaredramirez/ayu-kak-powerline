@@ -34,7 +34,7 @@ define-command -hidden powerline-theme-ayu-mirage %{ evaluate-commands %sh{
         declare-option -hidden str powerline_color06 ${black}       # fg: line-column
         declare-option -hidden str powerline_color07 ${white}       # fg: mode-info
         declare-option -hidden str powerline_color08 ${black}       # base background
-        declare-option -hidden str powerline_color09 ${green}       # bg: line-column
+        declare-option -hidden str powerline_color09 ${red}       # bg: line-column
         declare-option -hidden str powerline_color10 ${black}       # fg: filetype
         declare-option -hidden str powerline_color11 ${cyan}        # bg: filetype
         declare-option -hidden str powerline_color12 ${black}       # bg: client
